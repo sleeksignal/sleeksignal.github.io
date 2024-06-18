@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>슬릭시그널 - 가장 합리적인 도매 소싱 자동화</title>
+    <meta property="og:title" content="Active Online Software Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+        fill: var(--dl-color-gray-black);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+       @font-face {
+         font-family: 'Pretendard-Regular';
+         src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+         font-weight: 400;
+         font-style: normal;
+       }
+
+       * {
+         font-family: 'Pretendard-Regular';
+       }
+
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <nav class="home-centered">
+            <div class="home-left">
+              <span class="home-text">SleekSignal</span>
+              <div class="home-links">
+                <a href="#sleeksignal" class="home-link Link">슬릭시그널</a>
+                <a href="#integration" class="home-link1 Link">지원 서비스</a>
+                <a href="#pricing" class="home-link2 Link">가격</a>
+                <a href="#pricing" class="home-link3 Link">자주 묻는 질문</a>
+              </div>
+            </div>
+            <div class="home-right">
+              <span class="home-sign-in Link">로그인</span>
+              <div class="home-get-started">
+                <span class="home-text001">무료로 시작하기</span>
+              </div>
+              <div id="open-mobile-menu" class="home-burger-menu">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-yxbd.svg"
+                  class="home-mobile-menu-button"
+                />
+              </div>
+            </div>
+          </nav>
+          <header class="home-header">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <img
+                alt="pastedImage"
+                src="public/pastedimage-no9b-1500h.png"
+                class="home-logo"
+              />
+              <div class="home-links1">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div>
+              <div class="home-container02">
+                <script defer="">
+                  /*
+                  Mobile menu - Code Embed
+                  */
+
+                  // Mobile menu
+                  const mobileMenu = document.querySelector('#mobile-menu')
+
+                  // Buttons
+                  const closeButton = document.querySelector('#close-mobile-menu')
+                  const openButton = document.querySelector('#open-mobile-menu')
+
+                  // On openButton click, set the mobileMenu position left to -100vw
+                  openButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(0%)'
+                  })
+
+                  // On closeButton click, set the mobileMenu position to 0vw
+                  closeButton.addEventListener('click', function() {
+                      mobileMenu.style.transform = 'translateX(100%)'
+                  })
+                </script>
+              </div>
+            </div>
+          </header>
+          <header class="home-content">
+            <animate-on-reveal
+              animation="fadeInUp"
+              duration="300ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <h1 data-thq-animate-on-reveal="true" class="home-text005">
+                소싱부터 판매까지 한 번에.
+              </h1>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeInUp"
+              duration="300ms"
+              delay="300ms"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <p data-thq-animate-on-reveal="true" class="home-text006">
+                <span>슬릭시그널은 국내/해외 제품의 소싱부터</span>
+                <br />
+                <span>
+                  오픈마켓에 업로드 및 판매 과정까지 모두 한 번에 처리할 수
+                  있습니다.
+                </span>
+                <br />
+              </p>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeInUp"
+              duration="300ms"
+              delay="600ms"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <div data-thq-animate-on-reveal="true" class="home-get-started1">
+                <span class="home-text011">무료로 시작하기</span>
+              </div>
+            </animate-on-reveal>
+          </header>
+          <div class="home-dashboard-preview">
+            <div class="home-outline">
+              <img
+                alt="pastedImage"
+                src="public/mypage-1000h.png"
+                loading="lazy"
+                class="home-image"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="sleeksignal" class="home-features">
+          <div class="home-title">
+            <animate-on-reveal
+              animation="fadeInUp"
+              duration="500ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span data-thq-animate-on-reveal="true" class="home-text012">
+                슬릭시그널을 왜 사용할까요?
+              </span>
+            </animate-on-reveal>
+            <animate-on-reveal
+              animation="fadeInUp"
+              duration="500ms"
+              delay="0s"
+              direction="normal"
+              easing="ease"
+              iteration="1"
+            >
+              <span data-thq-animate-on-reveal="true" class="home-text013">
+                저희 슬릭시그널의 특장점을 확인하세요.
+              </span>
+            </animate-on-reveal>
+          </div>
+          <div class="home-cards">
+            <div class="home-container03">
+              <animate-on-reveal
+                animation="fadeInUp"
+                duration="300ms"
+                delay="0s"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div data-thq-animate-on-reveal="true" class="card">
+                  <img
+                    alt="pastedImage"
+                    src="public/pastedimage-fii6m-200h.png"
+                    class="home-icon02"
+                  />
+                  <span class="home-text014">재고 없는 판매</span>
+                  <span class="home-text015">
+                    <span class="home-text016">
+                      실제 재고가 필요 없기 때문에 창고 대여비 등의 사업 자금이
+                      발생하지 않아요!
+                    </span>
+                    <br />
+                  </span>
+                </div>
+              </animate-on-reveal>
+              <animate-on-reveal
+                animation="fadeInUp"
+                duration="300ms"
+                delay="200ms"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div
+                  data-thq-animate-on-reveal="true"
+                  class="home-publish card"
+                >
+                  <img
+                    alt="pastedImage"
+                    src="public/pastedimage-mimg-200h.png"
+                    class="home-icon03"
+                  />
+                  <span class="home-text018">자동화 시스템</span>
+                  <span class="home-text019">
+                    <span>클릭 몇 번으로 상품 선택, 등록, 배송까지!</span>
+                    <br />
+                    <span>모든 과정이 자동화 되어 있습니다.</span>
+                    <br />
+                  </span>
+                </div>
+              </animate-on-reveal>
+            </div>
+            <div class="home-container04">
+              <div class="home-analyze card">
+                <img
+                  alt="pastedImage"
+                  src="public/pastedimage-l6p-200h.png"
+                  class="home-icon04"
+                />
+                <span class="home-text024">많은 오픈마켓 지원</span>
+                <span class="home-text025">
+                  <span>국내 및 해외 대부분의 오픈마켓을 지원합니다.</span>
+                  <br />
+                  <span>앞으로도 계속 추가 될 예정입니다!</span>
+                  <br />
+                </span>
+              </div>
+              <animate-on-reveal
+                animation="none"
+                duration="300ms"
+                delay="200ms"
+                direction="normal"
+                easing="ease"
+                iteration="1"
+              >
+                <div data-thq-animate-on-reveal="true" class="card">
+                  <img
+                    alt="pastedImage"
+                    src="public/pastedimage-vyi5-200h.png"
+                    class="home-icon05"
+                  />
+                  <span class="home-text030">합리적인 가격</span>
+                  <span class="home-text031">
+                    <span>기능과 지원 범위 대비 합리적인 가격 구성으로</span>
+                    <br />
+                    <span>사업 비용을 줄여보세요!</span>
+                    <br />
+                  </span>
+                </div>
+              </animate-on-reveal>
+            </div>
+          </div>
+        </section>
+        <section class="home-statistics">
+          <div class="home-container05">
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>100만개</span></span>
+              <span class="active-users-text1">
+                <span>— 이상의 제품 소스</span>
+              </span>
+            </div>
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>국내 최대</span></span>
+              <span class="active-users-text1">
+                <span>— 국내/해외 소스</span>
+              </span>
+            </div>
+            <div class="active-users-active-users metrics">
+              <span class="active-users-text"><span>거의 모든</span></span>
+              <span class="active-users-text1">
+                <span>— 오픈마켓 지원</span>
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="home-banners"></section>
+        <section id="integration" class="home-integrations">
+          <div class="home-centered-container">
+            <div class="home-heading">
+              <span class="home-text036 sub-title">지원 서비스</span>
+              <span class="home-text037 title">
+                국내에서 가장 많은 서비스를 지원합니다.
+              </span>
+              <span class="home-text038">
+                <span>
+                  현존 서비스 중 가장 많은 국내/해외 소스들과 판매를 위한
+                  오픈마켓들을 지원하고 있습니다.
+                </span>
+                <br />
+                <br />
+                <span>저희가 지원하는 서비스를 살펴보세요.</span>
+                <br />
+              </span>
+            </div>
+            <div class="home-pills-container">
+              <div class="home-pills">
+                <animate-on-reveal
+                  animation="fadeInUp"
+                  duration="600ms"
+                  delay="0s"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <div
+                    data-thq-animate-on-reveal="true"
+                    class="home-container06"
+                  >
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://cdn1.domeggook.com/image/member/img_logo.png"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube you-tube-root-class-name1">
+                      <img
+                        alt="pastedImage"
+                        src="https://cdn2.domeggook.com/china/domeme/image/common/header/logo.jpg"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube you-tube-root-class-name2">
+                      <img
+                        alt="pastedImage"
+                        src="https://www.ownerclan.com/V2/_skin/ownerclan_v2/_img/com/LOGO.png?v=1.17.403"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://cdn.pixabay.com/photo/2021/08/10/16/02/amazon-6536326_1280.png"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Aliexpress_logo.svg/1024px-Aliexpress_logo.svg.png"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube you-tube-root-class-name">
+                      <img
+                        alt="pastedImage"
+                        src="https://i.namu.wiki/i/T8DIdOw1oYMJp-h9qe4xiKiwzzk3iNSesu27VNqfi-tC73RuIdQNSjcOgX4cQjtMlK0Alelf9ASZMhJvAHT3gQ.svg"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                  </div>
+                </animate-on-reveal>
+                <animate-on-reveal
+                  animation="fadeInUp"
+                  duration="600ms"
+                  delay="300ms"
+                  direction="normal"
+                  easing="ease"
+                  iteration="1"
+                >
+                  <div
+                    data-thq-animate-on-reveal="true"
+                    class="home-container07"
+                  >
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://src.wizad.co.kr/wizbbs/data/shopimg/A1694491520351_ss.png"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://mblogthumb-phinf.pstatic.net/20160902_124/ppanppane_14728003076370owh6_PNG/%C4%ED%C6%CE%B7%CE%B0%ED_%281%29.png?type=w800"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://mblogthumb-phinf.pstatic.net/20160902_289/ppanppane_147280023204738vnE_PNG/11%B9%F8%B0%A1_%B7%CE%B0%ED_%282%29.png?type=w800"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                    <div class="you-tube-you-tube">
+                      <img
+                        alt="pastedImage"
+                        src="https://mblogthumb-phinf.pstatic.net/20160902_189/ppanppane_1472800031918UdghP_PNG/%C1%F6%B8%B6%C4%CF_%B7%CE%B0%ED_%284%29.png?type=w800"
+                        class="you-tube-pasted-image"
+                      />
+                    </div>
+                  </div>
+                </animate-on-reveal>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-how-it-works">
+          <div class="home-centered-container1">
+            <div class="home-heading1">
+              <span class="home-text044">누가 슬릭시그널을 사용할까요?</span>
+              <span class="home-text045 title">부업이 필요하신 모두에게</span>
+            </div>
+            <div class="home-category">
+              <div class="home-headng">
+                <span class="home-text046">부업을 원하는 직장인</span>
+                <span class="home-text047">
+                  <span>
+                    시간과 노력을 절약하며 추가 소득을 창출할 수 있습니다.
+                  </span>
+                  <br />
+                  <span>안정적인 부업 기회를 얻을 수 있어요!</span>
+                  <br />
+                </span>
+              </div>
+              <div class="home-container08">
+                <img
+                  alt="pastedImage"
+                  src="public/202105016560_5001-500w.jpg"
+                  class="home-pasted-image"
+                />
+              </div>
+            </div>
+            <div class="home-row">
+              <div class="home-category1">
+                <div class="home-headng1">
+                  <span class="home-text052">용돈을 벌고 싶은 학생</span>
+                  <span class="home-text053">
+                    <span>간단한 절차로 경제 활동을 경험할 수 있어요!</span>
+                    <br />
+                    <span>안전하고 저렴한 판매 환경을 제공합니다.</span>
+                    <br />
+                  </span>
+                </div>
+                <img
+                  alt="pastedImage"
+                  src="public/34840_68767_1943-1200w.png"
+                  class="home-pasted-image1"
+                />
+              </div>
+              <div class="home-category2">
+                <div class="home-headng2">
+                  <span class="home-text058">예비창업자</span>
+                  <span class="home-text059">
+                    <span>최소한의 투자로 사업을 시작 할 수 있어요!</span>
+                    <br />
+                    <span>초기 비용 절감 및 빠른 성장을 지원해드려요!</span>
+                    <br />
+                  </span>
+                </div>
+                <img
+                  alt="pastedImage"
+                  src="public/handshake-1200w.png"
+                  class="home-pasted-image2"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" class="home-pricing">
+          <div class="home-centered-container2">
+            <div class="home-heading2">
+              <span class="home-text064 title">베이직부터 프리미엄까지</span>
+              <span class="home-text065">
+                사업 규모에 맞춰서 요금제를 선택하세요!
+              </span>
+              <div class="home-selection">
+                <span class="home-text066">Monthly</span>
+                <span class="home-text067">Yearly</span>
+              </div>
+            </div>
+            <div class="home-cards1">
+              <div class="home-card">
+                <span class="home-text068">베이직</span>
+                <span class="home-text069">사업을 시작하고 싶은 누구나</span>
+                <span class="home-text070">월 9,900원</span>
+                <span class="home-text071">포함 서비스</span>
+                <div class="home-bullet-points">
+                  <div class="home-point">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon06"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text072">1개 오픈 마켓 입점</span>
+                  </div>
+                  <div class="home-point01">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon08"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text073">
+                      <span>상품 5천개 소싱 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-point02">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon10"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text076">
+                      <span>50개 상품 등록 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-card1">
+                <span class="home-text079">심플</span>
+                <span class="home-text080">소규모 업체에 적합</span>
+                <span class="home-text081">월 49,000원</span>
+                <span class="home-text082">포함 서비스</span>
+                <div class="home-bullet-points1">
+                  <div class="home-point03">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon12"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text083">2개 오픈 마켓 입점</span>
+                  </div>
+                  <div class="home-point04">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon14"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text084">
+                      <span>상품 1만개 소싱 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-point05">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon16"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text087">
+                      <span>200개 상품 등록 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-card2">
+                <span class="home-text090">노멀</span>
+                <span class="home-text091">중소규모 업체를 위한 요금제</span>
+                <span class="home-text092">월 66,000원</span>
+                <span class="home-text093">포함 서비스</span>
+                <div class="home-bullet-points2">
+                  <div class="home-point06">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon18"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text094">4개 오픈 마켓 입점</span>
+                  </div>
+                  <div class="home-point07">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon20"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text095">
+                      <span>상품 3만개 소싱 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-point08">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon22"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text098">
+                      <span>3,000개 상품 등록 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-card3">
+                <span class="home-text101">어드밴스드</span>
+                <span class="home-text102">규모가 큰 업체를 위해</span>
+                <span class="home-text103">월 129,000원</span>
+                <span class="home-text104">포함 서비스</span>
+                <div class="home-bullet-points3">
+                  <div class="home-point09">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon24"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text105">
+                      <span></span>
+                      <span>오픈 마켓 무제한 입점 가능</span>
+                    </span>
+                  </div>
+                  <div class="home-point10">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon26"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text108">
+                      <span>상품 5만개 소싱 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-point11">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon28"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text111">
+                      <span>상품 무제한 등록 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="home-card4">
+                <span class="home-text114">프리미엄</span>
+                <span class="home-text115">대규모 물량 판매를 위한 선택</span>
+                <span class="home-text116">월 159,000원</span>
+                <span class="home-text117">포함 서비스</span>
+                <div class="home-bullet-points4">
+                  <div class="home-point12">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon30"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text118">
+                      <span></span>
+                      <span>오픈 마켓 무제한 입점 가능</span>
+                    </span>
+                  </div>
+                  <div class="home-point13">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon32"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text121">
+                      <span>상품 무제한 소싱 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                  <div class="home-point14">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon34"
+                    >
+                      <path
+                        d="M877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                    <span class="home-text124">
+                      <span>상품 무제한 등록 가능</span>
+                      <br />
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="home-faq">
+          <div class="home-heading3">
+            <span class="home-text127 title">자주 묻는 질문</span>
+          </div>
+          <div class="home-accordion">
+            <div data-faq="closed" class="accordionContainer">
+              <div class="home-header1">
+                <span class="home-text128">— 어떻게 가능한 건가요?</span>
+                <svg viewBox="0 0 1024 1024" class="accordionIcon">
+                  <path
+                    d="M316 366l196 196 196-196 60 60-256 256-256-256z"
+                  ></path>
+                </svg>
+              </div>
+              <div class="accordionContent">
+                <span class="home-text129">
+                  저희 슬릭시그널은 창업자 분들에게 번거로운 위탁 판매의 고충을
+                  덜어드리기 위하여 위탁 판매 사업의 기초적인 부분들을 모두
+                  자동화, 복잡한 절차를 단순화하여 합리적인 가격과 적은 시간을
+                  통해 사업을 시작하실 수 있도록 도와드리고 있습니다.
+                </span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="home-container10">
+              <script>
+                // Accordion - Code Embed
+
+                const accordionContainers = document.querySelectorAll('.accordionContainer'); // All accordion containers
+                const accordionContents = document.querySelectorAll('.accordionContent'); // All accordion content
+                const accordionIcons = document.querySelectorAll('.accordionIcon'); // All accordion icons
+
+                accordionContents.forEach((accordionContent) => {
+                    accordionContent.style.display = 'none'; //Hides all accordion contents
+                });
+
+                accordionContainers.forEach((accordionContainer, index) => {
+                    accordionContainer.addEventListener('click', () => {
+                        accordionContents.forEach((accordionContent) => {
+                            accordionContent.style.display = 'none'; //Hides all accordion contents
+                        });
+
+                        accordionIcons.forEach((accordionIcon) => {
+                            accordionIcon.style.transform = 'rotate(0deg)'; // Resets all icon transforms to 0deg (default)
+                        });
+
+                        if (accordionContainer.classList.contains('accordion-open')) { // Checks if this container has class 'accordion-open'
+                            accordionContainer.classList.remove('accordion-open'); // Removes class 'accordion-open'
+                        } else {
+                            accordionContainers.forEach((accordionContainer) => {
+                                accordionContainer.classList.remove('accordion-open'); // Removes class 'accordion-open' from all containers
+                            });
+
+                            accordionContainer.classList.add('accordion-open'); // Adds class 'accordion-open' to this container
+                            accordionContents[index].style.display = 'flex'; // Shows accordion content
+                            accordionIcons[index].style.transform = 'rotate(180deg)'; // Rotates accordion icon 180deg
+                        }
+                    });
+                });
+
+                /*
+                Here's what the above is doing:
+                    1. Selects all accordion containers, contents, and icons
+                    2. Hides all accordion contents
+                    3. Adds an event listener to each accordion container
+                    4. When an accordion container is clicked, it:
+                        - Hides all accordion contents
+                        - Resets all icon transforms to 0deg (default)
+                        - Checks if this container has class 'accordion-open'
+                            - If it does, it removes class 'accordion-open'
+                            - If it doesn't, it:
+                                - Removes class 'accordion-open' from all containers
+                                - Adds class 'accordion-open' to this container
+                                - Shows accordion content
+                                - Rotates accordion icon 180deg
+                */
+              </script>
+            </div>
+          </div>
+        </section>
+        <footer class="home-footer">
+          <div class="home-top">
+            <div class="home-left1">
+              <span class="home-text130">뉴스레터 구독하기</span>
+              <div class="home-subscription">
+                <input
+                  type="email"
+                  placeholder="이메일 주소"
+                  class="home-textinput input"
+                />
+                <div class="home-subscribe">
+                  <span class="home-text131">구독하기</span>
+                </div>
+              </div>
+              <span class="home-text132">
+                <span>뉴스레터 구독은 슬릭시그널의 약관에</span>
+                <br />
+                <span>동의하신 것으로 간주됩니다.</span>
+              </span>
+              <div class="home-contact">
+                <span class="home-text136">Contact</span>
+                <a
+                  href="mailto:use@active-app.com?subject=Support"
+                  class="home-link4"
+                >
+                  darlene@sleeksignal.kr
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="home-bottom">
+            <span class="home-text137">SleekSignal</span>
+            <span class="home-text138">
+              Copyright © SleekSignal 2024 Reserved.
+            </span>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+    ></script>
+  </body>
+</html>
